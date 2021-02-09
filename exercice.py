@@ -1,30 +1,42 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
+import math
 from typing import List
 
 
 def convert_to_absolute(number: float) -> float:
 
-    print ('Veillez entrer un nombre')
-    input (number)
-    float(number)
+
     if number < 0:
         number = number * (-1)
-
+        " return number = (number ** 2) ** (1/2"
     return number
 
 
 def use_prefixes() -> List[str]:
     prefixes, suffixe = 'JKLMNOPQ', 'ack'
-
-    return [""]
-
+    liste_nom = []
+    for char in prefixes:
+        liste_nom.append(char + suffixe)
+        return liste_nom
 
 def prime_integer_summation() -> int:
-    return 0
+    i = 2
+    nb_premier = 1
+    list_premiers = []
+    somme = 0
+    while len(list_premiers) < 100 & i < int(math.sqrt(nb_premier)):
+            nb_premier += 1
+            if nb_premier % i != 0:
+                i += 1
+            else:
+                continue
+            list_premiers.append(nb_premier)
+            somme += nb_premier
 
+    print(list_premiers)
+    return somme
 
 def factorial(number: int) -> int:
     return 0
