@@ -1,20 +1,8 @@
-test_absolute (__main__.TestExercice) ... ERROR
+test_absolute (__main__.TestExercice) ... ok
 test_factorial (__main__.TestExercice) ... FAIL
 test_prefixes (__main__.TestExercice) ... FAIL
 test_summation (__main__.TestExercice) ... FAIL
 test_verify_ages (__main__.TestExercice) ... FAIL
-
-======================================================================
-ERROR: test_absolute (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 15, in test_absolute
-    output = [exercice.convert_to_absolute(v) for v in values]
-  File "test_exercice.py", line 15, in <listcomp>
-    output = [exercice.convert_to_absolute(v) for v in values]
-  File "/home/runner/work/2021h-ch5-exercices-chberp/2021h-ch5-exercices-chberp/exercice.py", line 11, in convert_to_absolute
-    input (number)
-EOFError: EOF when reading a line
 
 ======================================================================
 FAIL: test_factorial (__main__.TestExercice)
@@ -37,17 +25,13 @@ FAIL: test_prefixes (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 32, in test_prefixes
     'Mauvaise réponse'
-AssertionError: Lists differ: [''] != ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack', 'Qack']
-
-First differing element 0:
-''
-'Jack'
+AssertionError: Lists differ: ['Jack'] != ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack', 'Qack']
 
 Second list contains 7 additional elements.
 First extra element 1:
 'Kack'
 
-- ['']
+- ['Jack']
 + ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack', 'Qack'] : Mauvaise réponse
 
 ======================================================================
@@ -74,6 +58,6 @@ False
 + [False, True, False, False, True, True, True, True, False] : Mauvaise réponse
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.002s
+Ran 5 tests in 0.001s
 
-FAILED (failures=4, errors=1)
+FAILED (failures=4)
