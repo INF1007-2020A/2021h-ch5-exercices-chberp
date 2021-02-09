@@ -28,6 +28,7 @@ def prime_integer_summation() -> int:
     somme = 0
     while len(list_premiers) < 100 & i < int(math.sqrt(nb_premier)):
             nb_premier += 1
+            i = 2
             if nb_premier % i != 0:
                 i += 1
             else:
